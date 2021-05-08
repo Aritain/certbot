@@ -32,4 +32,4 @@ RUN apk add --no-cache --virtual .build-deps \
             --editable src/certbot \
     && apk del .build-deps
 
-HEALTHCHECK --interval=30s --timeout=10s --retries=2 CMD /opt/certbot/tools/docker/health_checker.sh,
+HEALTHCHECK --interval=30s --timeout=10s --retries=2 CMD /opt/certbot/tools/docker/health_checker.sh
